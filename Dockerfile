@@ -17,4 +17,4 @@ RUN ARCH=linux_x86_64 TRAVIS_TAG=docker bash build.sh && \
     mv output/fomu-toolchain-linux_x86_64-docker /opt && \
     rm -rf output
 
-RUN export PATH=/opt/fomu-toolchain=linux_x86_64-docker:$PATH
+ENV PATH=/opt/fomu-toolchain-linux_x86_64-docker/bin:$PATH
